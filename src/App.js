@@ -1,7 +1,7 @@
 import React from "react";
 
-import AddUser from "./components/AddUser";
-import UsersList from "./components/UsersList";
+import AddUser from "./components/Users/AddUser";
+import UsersList from "./components/Users/UsersList";
 
 function App() {
   return (
