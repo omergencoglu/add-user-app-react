@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import AddUser from "./components/Users/AddUser";
 import UsersList from "./components/Users/UsersList";
 
+import Wrapper from "./components/Helpers/Wrapper";
+
 function App() {
   const [users, setUsers] = useState("");
 
@@ -18,10 +20,10 @@ function App() {
   };
 
   return (
-    <div>
+    <Wrapper>
       <AddUser onSaveUserData={saveUserDataHandler} />
       <UsersList items={users} />
-    </div>
+    </Wrapper>
   );
 }
 
